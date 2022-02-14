@@ -25,16 +25,10 @@ const { render } = require("ejs");
             conta: req.body.conta,
             saldo: req.body.saldo,
             ativo: req.body.ativo
-        }).then(function(){
-            res.send("Usuário criado com sucesso!")
-        }).catch(function(erro){
-            res.send("Houve um erro" + erro)
         })
-    });
-
-    app.get('/res', (req, res) =>{
         res.render('saldoesacar');
     });
+
 
 
 
