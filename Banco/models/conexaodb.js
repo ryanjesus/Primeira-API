@@ -8,7 +8,7 @@
 //Se conectado ao mysql
 const { Model } = require('sequelize')
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('usuarios', 'root', '64557010', {
+const sequelize = new Sequelize('usuarios', 'root', '', {
     host: "localhost",
     dialect: 'mysql'
 })
