@@ -17,6 +17,18 @@ const { render } = require("ejs");
         res.render('formulario');
     });
 
+    app.get('/add', (req, res) =>{
+        res.render('saldoesacar')
+    })
+
+    /*teste
+    app.get('/res', (req, res) =>{
+        Post.findAll().then(function(posts){
+            res.render('Lista', {posts: posts})
+        })
+    })
+    */
+
     app.post('/cad', (req, res) =>{
         usuarios.create({
             nome: req.body.nome,
@@ -26,7 +38,7 @@ const { render } = require("ejs");
             saldo: req.body.saldo,
             ativo: req.body.ativo
         })
-        res.render('saldoesacar');
+        res.redirect('/add')
     });
 
 

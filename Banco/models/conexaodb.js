@@ -8,7 +8,7 @@
 //Se conectado ao mysql
 const { Model } = require('sequelize')
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('usuarios', 'root', '', {
+const sequelize = new Sequelize('usuarios', 'root', '64557010', {
     host: "localhost",
     dialect: 'mysql'
 })
@@ -17,7 +17,7 @@ const sequelize = new Sequelize('usuarios', 'root', '', {
 sequelize.authenticate().then(function(){
     console.log("Conectado com sucesso!")
 }).catch(function(erro){
-    console.loge("Falha ao se conectar: "+ erro)
+    console.log("Falha ao se conectar: "+ erro)
 })
 
 
