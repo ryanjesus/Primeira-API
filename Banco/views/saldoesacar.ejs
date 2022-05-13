@@ -1,7 +1,7 @@
 <title>Formulario01</title>
 </head>
 <body>
-<form action="/esc" method="POST">
+<form action="/cad" method="POST">
   <fieldset>
 <legend>Preencha os dados abaixo:</legend>
 <div class="linha">
@@ -17,15 +17,17 @@
     <div class="linha">
 
     <label>
-    Saldo: <br />
-    <input name="Saldo" type="text" id="Saldo" size="40" />
+    Saldo2: <br />
+    <input name="Saldo2" type="text" id="Saldo2" size="40" />
     </label>
     </div>
 
-    <label><input name="Deposita" type="submit" id="Deposita" value="Deposita" />
+    <label>
+    <a href="/somar/{{conta}}"><button>Depositar</button></a>
     </label>
 
-    <label><input name="Sacar" type="submit" id="Sacar" value="Sacar" />
+    <label>
+    <a href=""><button>Sacar</button></a>
     </label>
     </div>
     </fieldset>

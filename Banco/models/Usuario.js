@@ -8,7 +8,7 @@ const usuarios = conexaodb.sequelize.define('users', {
     email: {
         type: conexaodb.Sequelize.STRING
     },
-    senha: {
+    password: {
         type: conexaodb.Sequelize.STRING
     },
     conta: {

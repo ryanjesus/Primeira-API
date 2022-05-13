@@ -17,10 +17,6 @@ const { render } = require("ejs");
         res.render('formulario');
     });
 
-    app.get('/add', (req, res) =>{
-        res.render('saldoesacar')
-    })
-
     /*teste
     app.get('/res', (req, res) =>{
         Post.findAll().then(function(posts){
@@ -33,7 +29,7 @@ const { render } = require("ejs");
         usuarios.create({
             nome: req.body.nome,
             email: req.body.email,
-            senha: req.body.senha,
+            password: req.body.password,
             conta: req.body.conta,
             saldo: req.body.saldo,
             ativo: req.body.ativo
@@ -41,7 +37,10 @@ const { render } = require("ejs");
         res.redirect('/add')
     });
 
-
+    app.get('/add', (req, res) =>{
+        res.render('saldoesacar')
+    })
+    
 
 
 //A função do express tem quer a última no codigo
